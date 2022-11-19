@@ -47,7 +47,7 @@ describe("To-dolist testing", () => {
   });
   test("Retrieves due today items", () => {
     let dTodaytodos = dueToday();
-    let countvar = dueToday_todos.length;
+    let countvar = dTodaytodos.length;
     add({
       title: "Test todo task3",
       completed: false,
@@ -58,7 +58,7 @@ describe("To-dolist testing", () => {
   });
   test("Retrieves due-later items", () => {
     let dLtodos = dueLater();
-    let countvar = dueLater_todos.length;
+    let countvar = dLtodos.length;
     add({
       title: "Test todo task4",
       completed: false,
